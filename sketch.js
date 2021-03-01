@@ -16,7 +16,8 @@ function draw() {
     pipes[i].update();
     
     if(pipes[i].hits(Bird)){
-      console.log("dsf");
+      clear();
+      noLoop();
     }
     
     if(pipes[i].offScreen()){
