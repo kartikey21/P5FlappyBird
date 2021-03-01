@@ -26,14 +26,14 @@ function draw() {
   
   if(frameCount  %  75  ==  0){
     pipes.push(new pipe());
-    
   }
-  
-  
 }
 
 function keyPressed(){
   if(key  ==  ' '){
    Bird.Up();
   }
+}
+function mousePressed(){
+   Bird.Up();
 }

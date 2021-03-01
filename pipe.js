@@ -21,7 +21,7 @@ function pipe(){
   }  
   
   this.hits  =  function(bird){
-    if(bird.y  <  this.top  ||  bird.y  >  height  -  this.bottom){
+    if(bird.y - bird.BirdSize/2  <  this.top  ||  bird.y  + bird.BirdSize/2  >  height  -  this.bottom){
       if(bird.x  >  this.x  && bird.x  <  this.x  +this.w){
   this.hitHighlight  =  true;
         
